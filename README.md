@@ -9,7 +9,7 @@ A side panel for the daily Git loop in [Herdr](https://herdr.dev), laid out like
 - **VS Code Source Control Flow**: Top half stages, unstages, and discards files (`M`, `A`, `U`, `D`, `!`), writes commit messages (`⌘⏎`), and syncs with remotes.
 - **Visual Commit Graph**: Bottom half renders branch lanes, commit tags, detached HEAD states, authors, relative timestamps, and commit details.
 - **Inline Hunk Diffs & Actions**: Clicking a changed file inspects its diff with single-hunk **Stage**, **Unstage**, and **Discard** pill buttons.
-- **Multi-Repository Auto-Detection (Manygit)**: Opening a folder holding several repositories automatically lists and manages them.
+- **Multi-Repository Auto-Detection (Manygit)**: Opening a folder holding several repositories automatically lists and manages them with fast status indicators.
 - **Comprehensive Stash & Sync**: 1-click fast-forward pull/push, diverged branch merge/rebase prompts, and stash list / apply / pop / drop.
 - **Keyboard-First Navigation**: Full arrow / `j k` / `Home End` movement, `s` to stage, `u` to unstage, `d` to discard, and `m` for contextual Git actions.
 

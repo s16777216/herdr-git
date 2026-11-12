@@ -4,7 +4,10 @@ gpui-kit.d.ts
 # Herdr error outputs
 *.error
 
-# System & Editor files
+# Temporary screenshots
+*.png
+!preview.png
+
 .DS_Store
 Thumbs.db
 *.swp

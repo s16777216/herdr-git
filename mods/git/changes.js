@@ -2,6 +2,7 @@
 // Staged Changes / Changes groups, plus the header's sync button and its menu.
 // The data (groups, upstream counts, operation, stashes) is read by the Graph
 // that owns this; a row's click opens its diff in the Graph's bottom half.
+// Provides live Stage / Unstage / Discard reactive actions and fast commit dispatch.
 import { div, svg } from "gpui-kit";
 import { v_flex, h_flex, InputState, Input } from "gpui-base";
 import { notify, openOverlay, readTextFile } from "herdr";
