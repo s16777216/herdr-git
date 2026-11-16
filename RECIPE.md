@@ -72,8 +72,9 @@ The panel is the `graph` block in the side panel (368px, min 280, max 900). It i
 
 ## Done when
 
-- `herdr-app check ~/.config/herdr-app/mods/git` and `.../mods/tabs-crew` pass; `herdr-app status` shows `"errors": []`.
-- The top bar shows Files, Crew and Git as icon-only buttons (no Changes); ⌘G opens and closes the Git panel.
+- `herdr-app check ~/.config/herdr-app/mods/git` passes; `herdr-app status` shows `"errors": []`.
+- Panel container (`K.panel` in `kit.js`) renders flush with `border_l(1)` and no `rounded(10)` corners; the commit bar omits the `View as list` toggle.
+- Clicking the Graph toolbar chevron collapses/expands the commit graph (`git-graph.collapsed` in `localStorage`), letting `Changes` expand (`flex_1`) to fill the panel while keeping a 36px `Graph` footer bar (auto-expanded when viewing a file diff).
 - In a scratch repo: stage, unstage and discard a file (discard asks first); stage one hunk of a two-hunk file and `git diff --cached` shows only that hunk; commit with ⌘⏎; create and switch branch; stash, list and pop, and Drop asks first.
 - Against a local bare remote: pushing and pulling updates `↑N ↓N`. On a diverged branch, sync offers rebase or merge; a clean rebase pushes; a conflicting one stops with `!` files and Abort restores the earlier state.
 - In a conflicted repo, Commit with nothing staged refuses.
